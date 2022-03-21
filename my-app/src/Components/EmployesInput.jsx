@@ -34,7 +34,7 @@ function EmployesInput({ handleAddProps }) {
       <br />
       <input
         name="gender"
-        placeholder="gendert"
+        placeholder="gender"
         value={query.gender}
         onChange={(e) => handleChange(e)}
       />

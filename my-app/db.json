@@ -1,0 +1,29 @@
+{
+  "EmployeeData": [
+    {
+      "name": "Donal",
+      "department": "HR ",
+      "gender": "Female ",
+      "role": "Head ",
+      "salary": "47000 ",
+      "id": 1
+    },
+    {
+      "name": "Shreys",
+      "department": "HR",
+      "gender": "Male",
+      "role": "Trinee",
+      "salary": "25000",
+      "id": 2
+    },
+    {
+      "name": "Anaya",
+      "department": "Marketing",
+      "gender": "Female",
+      "role": "Head",
+      "salary": "34000",
+      "id": 3
+    }
+  
+  ]
+}
