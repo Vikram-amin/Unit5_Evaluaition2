@@ -1,9 +1,7 @@
 import React from 'react'
 
-function ButtonCard() {
-  return (
-    <div>ButtonCard</div>
-  )
+function ButtonCard({ handleClick, lable }) {
+  return <button onClick={handleClick}> {lable} </button>;
 }
 
 export default ButtonCard

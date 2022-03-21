@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonCard from './ButtonCard';
 import DisplayData from './DisplayData';
 import EmployesInput from './EmployesInput'
 
@@ -14,6 +15,18 @@ function EmployesDashboard() {
           .then((res) => res.json())
           .then((res) => setData(res))
           .catch((err) => console.log(err));
+    }
+   
+
+    const handleChange = () =>{
+    //    let Salary = data.map((el) => console.log(el.salary));
+          fetch(
+            `http://localhost:3004/EmployeeData?_sort=&_order=asc`
+          )
+            .then((res) => res.json())
+            .then((res) => setData(res))
+            .catch((err) => console.log(err));
+
     }
 
     const handleAdd = (query) =>{
@@ -43,7 +56,14 @@ function EmployesDashboard() {
     <div>
       <EmployesInput handleAddProps={handleAdd} />
       <hr />
-      
+      <ButtonCard
+        lable="Sort By Salary Ascending"
+        handleClick={() => handleChange()}
+      />
+      <ButtonCard
+        lable="Sort By Salary Descending"
+        handleClick={() => handleChange()}
+      />
       <hr />
 
       {data.map((item, id) => (
